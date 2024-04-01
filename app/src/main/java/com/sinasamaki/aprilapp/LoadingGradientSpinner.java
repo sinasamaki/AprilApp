@@ -50,33 +50,33 @@ public class LoadingGradientSpinner extends FrameLayout {
         thirdCircle = new GradientCircle(getContext());
 
         addView(firstCircle);
-//        addView(secondCircle);
-//        addView(thirdCircle);
+        addView(secondCircle);
+        addView(thirdCircle);
 
         firstCircle.setColor(firstColor);
-//        secondCircle.setColor(secondColor);
-//        thirdCircle.setColor(thirdColor);
-//
-//
-//        firstCircle.setCameraDistance(100000);
-//        secondCircle.setCameraDistance(100000);
-//        thirdCircle.setCameraDistance(100000);
-//
-//        ObjectAnimator firstCircleAnimation = createCircleAnimation(firstCircle, 0L);
-//        firstCircleAnimation.start();
-//
-//        ObjectAnimator secondCircleAnimation = createCircleAnimation(secondCircle, 200L);
-//        secondCircleAnimation.start();
-//
-//        ObjectAnimator thirdCircleAnimation = createCircleAnimation(thirdCircle, 400L);
-//        thirdCircleAnimation.start();
-//
-//
-//        ObjectAnimator viewRotate = ObjectAnimator.ofFloat(this, View.ROTATION, 0f, 360f);
-//        viewRotate.setRepeatCount(ValueAnimator.INFINITE);
-//        viewRotate.setRepeatMode(ValueAnimator.RESTART);
-//        viewRotate.setDuration(20_000L);
-//        viewRotate.start();
+        secondCircle.setColor(secondColor);
+        thirdCircle.setColor(thirdColor);
+
+
+        firstCircle.setCameraDistance(100000);
+        secondCircle.setCameraDistance(100000);
+        thirdCircle.setCameraDistance(100000);
+
+        ObjectAnimator firstCircleAnimation = createCircleAnimation(firstCircle, 0L);
+        firstCircleAnimation.start();
+
+        ObjectAnimator secondCircleAnimation = createCircleAnimation(secondCircle, 200L);
+        secondCircleAnimation.start();
+
+        ObjectAnimator thirdCircleAnimation = createCircleAnimation(thirdCircle, 400L);
+        thirdCircleAnimation.start();
+
+
+        ObjectAnimator viewRotate = ObjectAnimator.ofFloat(this, View.ROTATION, 0f, 360f);
+        viewRotate.setRepeatCount(ValueAnimator.INFINITE);
+        viewRotate.setRepeatMode(ValueAnimator.RESTART);
+        viewRotate.setDuration(20_000L);
+        viewRotate.start();
     }
 
 
